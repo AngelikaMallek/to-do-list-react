@@ -1,0 +1,28 @@
+.section__element {
+    font-size: 15px;
+}
+
+@media(max-width: 767px) {
+    .section__element{
+        display: grid;
+        grid-gap: 10px;
+        margin: 20px;
+    }
+}
+
+.section__button {
+    background-color: white;
+    border: none;
+    color: teal;
+    transition: color 1s;
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 30%);
+    cursor: pointer;
+}
+
+.section__button:disabled {
+    color: grey;
+    cursor: auto;
+}
