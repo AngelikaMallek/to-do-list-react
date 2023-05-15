@@ -9,10 +9,7 @@ import Container from "./Container";
 function App() {
   const [hideDoneTasks, setHideDone] = useState(false);
 
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "Zjeść obiad", done: false },
-    { id: 2, content: "Zjeść zupę", done: true },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const toogleHideDone = () => {
     setHideDone(hideDoneTasks => !hideDoneTasks);
