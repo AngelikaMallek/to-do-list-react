@@ -2,7 +2,7 @@
 ## Demo
 You can visit my website here: [to-do-list](https://angelikamallek.github.io/to-do-list-react/)
 
-![Screen](screen.png)
+![Animation](Animation.gif)
 ## Description
 This is my website created as part of YouCode course, a simple to do list. You can added your tasks. 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
