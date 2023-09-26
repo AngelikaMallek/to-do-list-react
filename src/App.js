@@ -16,7 +16,7 @@ function App() {
   };
 
   const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(tasks => tasks.id !== id));
+    setTasks(tasks => tasks.filter(tasks => tasks.id !== id))
   };
 
   const toogleTaskDone = (id) => {
