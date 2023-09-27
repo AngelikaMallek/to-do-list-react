@@ -11,6 +11,8 @@ function App() {
 
   const [tasks, setTasks] = useState([]);
 
+    localStorage.setItem("taskContent", JSON.stringify(tasks));
+
   const toogleHideDone = () => {
     setHideDone(hideDoneTasks => !hideDoneTasks);
   };
