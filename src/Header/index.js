@@ -1,6 +1,6 @@
 const Header = () => (
     <header>
-        <h1 className="header__title">Lista zadań</h1>
+        <h1>Lista zadań</h1>
     </header>
 );
 

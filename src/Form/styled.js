@@ -1,43 +1,42 @@
-.form {
+import styled from "styled-components";
+
+export const StyledForm = styled.form`
     display: flex;
     justify-content: space-around;
     padding-bottom: 20px;
-}
 
-@media(max-width: 767px) {
-    .form {
+    @media(max-width: 767px) {
         display: flex;
         flex-direction: column;
         margin: 10px;
-    }
 }
+`;
 
-.form__button {
+export const Button = styled.button`
     padding: 10px;
     background-color: teal;
     color: white;
     flex-basis: 15%;
     border: none;
     transition: background 1s, transform 1s;
-}
 
-.form__button:hover {
-    background-color: hsl(180, 100%, 30%);
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-@media(max-width: 767px) {
-    .form__button {
-        margin-top: 10px;
+    &:hover {
+        background-color: hsl(180, 100%, 30%);
+        cursor: pointer;
+        transform: scale(1.1);
     }
-    .form__button:hover {
+
+    @media(max-width: 767px) {
+        margin-top: 10px;
+
+        &:hover {
         transform: scale(1);
     }
 }
+`;
 
-.form__field {
+export const Field = styled.input`
     padding: 10px;
     flex-basis: 80%;
     border: 1px solid #dfdfdf;
-}
+`;
