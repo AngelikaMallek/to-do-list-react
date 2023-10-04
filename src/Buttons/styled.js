@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledButtons = styled.div`
     font-size: 15px;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({theme}) => theme.breakpoints.mobile}px) {
         display: grid;
         grid-gap: 10px;
         margin: 20px;
@@ -13,7 +13,7 @@ export const StyledButtons = styled.div`
 export const Button = styled.button`
     background-color: white;
     border: none;
-    color: teal;
+    color: ${({theme}) => theme.color};
     transition: color 1s;
 
     &:hover {

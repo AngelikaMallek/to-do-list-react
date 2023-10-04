@@ -5,7 +5,7 @@ export const StyledForm = styled.form`
     justify-content: space-around;
     padding-bottom: 20px;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         display: flex;
         flex-direction: column;
         margin: 10px;
@@ -14,7 +14,7 @@ export const StyledForm = styled.form`
 
 export const Button = styled.button`
     padding: 10px;
-    background-color: teal;
+    background-color: ${({theme}) => theme.color};
     color: white;
     flex-basis: 15%;
     border: none;
@@ -26,7 +26,7 @@ export const Button = styled.button`
         transform: scale(1.1);
     }
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({theme}) => theme.breakpoints.mobile}px) {
         margin-top: 10px;
 
         &:hover {

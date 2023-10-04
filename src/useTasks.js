@@ -45,7 +45,15 @@ const useTasks = () => {
         ])
     }
 
-    return {tasks, hideDoneTasks, toogleHideDone, removeTask, toogleTaskDone, setAllDone, addNewTask};
+    return {
+      tasks, 
+      hideDoneTasks,
+      toogleHideDone, 
+      removeTask, 
+      toogleTaskDone, 
+      setAllDone, 
+      addNewTask
+    };
 }
 
 export default useTasks;

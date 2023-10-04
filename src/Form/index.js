@@ -15,7 +15,7 @@ const Form = ({ addNewTask }) => {
         setNewTaskContent("");
     }
 
-    const onFocusImput = () => {
+    const onFocusInput = () => {
         inputRef.current.focus();
     }
 
@@ -29,7 +29,7 @@ const Form = ({ addNewTask }) => {
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
             <Button
-                onClick={onFocusImput}
+                onClick={onFocusInput}
             >
                 Dodaj zadanie
             </Button>

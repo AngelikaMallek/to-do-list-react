@@ -14,7 +14,7 @@ export const Heading = styled.h2`
     justify-content: space-between;
 
     
-    @media(max-width: 767px) {
+    @media(max-width: ${({theme}) => theme.breakpoints.mobile}px) {
         display: flex;
         flex-direction: column;  
     }
