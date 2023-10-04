@@ -8,7 +8,6 @@ export const List = styled.ul`
 export const Button = styled.button`
     width: 30px;
     height: 30px;
-    background-color: red;
     border: none;
     color: white;
     transition: background 1s;
@@ -17,15 +16,24 @@ export const Button = styled.button`
         cursor: pointer;
         background-color: hsl(0, 100%, 65%);
     }
+`;
 
-    ${({ toogleDone }) => toogleDone && css`
-        background-color: green;
+export const ToggleDoneButton = styled(Button)`
+    background-color: green;
 
-        &:hover{
-            background-color: hsl(120, 100%, 35%);
-            cursor: pointer;
-        }
-    `}
+    &:hover{
+        background-color: hsl(120, 100%, 35%);
+        cursor: pointer;
+    }
+`;
+
+export const RemoveButton = styled(Button)`
+    background-color: red;
+
+    &:hover {
+        cursor: pointer;
+        background-color: hsl(0, 100%, 65%);
+    }
 `;
 
 export const Item = styled.li`

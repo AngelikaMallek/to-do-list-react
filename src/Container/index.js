@@ -1,9 +1,7 @@
-import { StyledContainer } from "./styled";
+import styled from "styled-components";
 
-const Container = ({ children }) => (
-    <StyledContainer>
-        {children}
-    </StyledContainer>
-)
+const Container = styled.div`
+    padding: 20px;
+`;
 
 export default Container;
