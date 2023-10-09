@@ -9,30 +9,25 @@ export const Button = styled.button`
     width: 30px;
     height: 30px;
     border: none;
-    color: white;
+    color: ${({theme}) => theme.colors.white};
     transition: background 1s;
-
-    &:hover {
-        cursor: pointer;
-        background-color: hsl(0, 100%, 65%);
-    }
 `;
 
 export const ToggleDoneButton = styled(Button)`
-    background-color: green;
+    background-color: ${({theme}) => theme.colors.green};
 
     &:hover{
-        background-color: hsl(120, 100%, 35%);
+        background-color: ${({theme}) => theme.colors.hoverGreen};
         cursor: pointer;
     }
 `;
 
 export const RemoveButton = styled(Button)`
-    background-color: red;
+    background-color: ${({theme}) => theme.colors.red};
 
     &:hover {
         cursor: pointer;
-        background-color: hsl(0, 100%, 65%);
+        background-color: ${({theme}) => theme.colors.hoverRed};
     }
 `;
 

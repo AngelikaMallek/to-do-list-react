@@ -11,18 +11,18 @@ export const StyledButtons = styled.div`
 `;
 
 export const Button = styled.button`
-    background-color: white;
+    background-color: ${({theme}) => theme.colors.white};
     border: none;
-    color: ${({theme}) => theme.color};
+    color: ${({theme}) => theme.colors.teal};
     transition: color 1s;
 
     &:hover {
-        color: hsl(180, 100%, 30%);
+        color: ${({theme}) => theme.colors.hoverTeal};
         cursor: pointer;
     }
 
     &:disabled {
-        color: grey;
+        color: ${({theme}) => theme.colors.grey};
         cursor: auto;
     }
 `;

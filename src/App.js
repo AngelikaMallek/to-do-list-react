@@ -5,8 +5,6 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import useTasks from "./useTasks";
-import { ThemeProvider } from "styled-components";
-import { theme } from "./styled";
 
 function App() {
  
@@ -21,7 +19,7 @@ function App() {
   } = useTasks();
 
   return (
-    <ThemeProvider theme={theme}>
+    <div>
       <Container>
         <Header />
         <Section
@@ -48,7 +46,7 @@ function App() {
           }
         />
       </Container>
-    </ThemeProvider>
+    </div>
   );
 }
 

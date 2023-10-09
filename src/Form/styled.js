@@ -14,14 +14,14 @@ export const StyledForm = styled.form`
 
 export const Button = styled.button`
     padding: 10px;
-    background-color: ${({theme}) => theme.color};
-    color: white;
+    background-color: ${({theme}) => theme.colors.teal};
+    color: ${({theme}) => theme.colors.white};
     flex-basis: 15%;
     border: none;
     transition: background 1s, transform 1s;
 
     &:hover {
-        background-color: hsl(180, 100%, 30%);
+        background-color: ${({theme}) => theme.colors.hoverTeal};
         cursor: pointer;
         transform: scale(1.1);
     }
