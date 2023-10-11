@@ -7,15 +7,10 @@ import Container from "../../common/Container";
 import useTasks from "../../useTasks";
 
 function Tasks() {
- 
+  
   const {
-    tasks,
-    hideDoneTasks, 
-    toogleHideDone, 
     removeTask, 
-    toogleTaskDone, 
     setAllDone, 
-    addNewTask
   } = useTasks();
 
   return (
@@ -24,23 +19,17 @@ function Tasks() {
         <Header />
         <Section
           title="Dodaj nowe zadanie"
-          body={<Form addNewTask={addNewTask}/>}
+          body={<Form/>}
         />
         <Section
           title="Lista zadań"
           body={
             <TasksList
-              tasks={tasks}
-              hideDoneTasks={hideDoneTasks}
               removeTask={removeTask}
-              toogleTaskDone={toogleTaskDone}
             />
           }
           extraHeaderContent={
             <Buttons
-              tasks={tasks}
-              hideDoneTasks={hideDoneTasks}
-              toogleHideDone={toogleHideDone}
               setAllDone={setAllDone}
             />
           }
