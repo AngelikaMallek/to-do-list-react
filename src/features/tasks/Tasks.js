@@ -4,15 +4,8 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
-import useTasks from "../../useTasks";
 
 function Tasks() {
-  
-  const {
-    removeTask, 
-    setAllDone, 
-  } = useTasks();
-
   return (
     <div>
       <Container>
@@ -23,16 +16,8 @@ function Tasks() {
         />
         <Section
           title="Lista zadań"
-          body={
-            <TasksList
-              removeTask={removeTask}
-            />
-          }
-          extraHeaderContent={
-            <Buttons
-              setAllDone={setAllDone}
-            />
-          }
+          body={<TasksList />}
+          extraHeaderContent={<Buttons />}
         />
       </Container>
     </div>
