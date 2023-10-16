@@ -1,14 +1,14 @@
 import Form from "./Form";
 import TasksList from "./TasksList";
 import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import Container from "../../common/Container";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import Container from "../../../common/Container";
 import { Button, StyledButtons } from "./Button";
-import { fetchExampleTasks, selectIsLoading } from "./taskSlice";
+import { fetchExampleTasks, selectIsLoading } from "../taskSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-function Tasks() {
+function TasksPage() {
 
   const dispatch = useDispatch()
 
@@ -17,7 +17,7 @@ function Tasks() {
   return (
     <div>
       <Container>
-        <Header />
+        <Header title="Lista zadań"/>
         <Section
           title="Dodaj nowe zadanie"
           body={<Form/>}
@@ -42,4 +42,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;

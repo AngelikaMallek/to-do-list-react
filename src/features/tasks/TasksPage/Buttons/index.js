@@ -1,4 +1,4 @@
-import { selectAreTasksEmpty, selectHideDone, selectIsEmptyTasksDone, toogleHideDone, setAllDone } from "../taskSlice";
+import { selectAreTasksEmpty, selectHideDone, selectIsEmptyTasksDone, toogleHideDone, setAllDone } from "../../taskSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { StyledButtons, Button } from "../Button";
 
