@@ -11,8 +11,9 @@ const Author = () => (
           body={
             <>
                 <StyledText>
-                    Jestem absolwentem Technikum Informatycznego, jednak dalej zgłębiam poznaną mi więdzę, poprzez kurs YouCode. 
-                    Pracuję w agencji reklamowej. Interesuje się zdrowym stylem życia i muzyką, od wielu lat gram na skrzypcach. 
+                    Jestem absolwentem Technikum Informatycznego, jednak dalej zgłębiam poznaną mi więdzę, poprzez kurs <b>YouCode.</b> 
+                    Pracuję w agencji reklamowej, projektuję strony internetowe oparte o CMS Wordpress. Mimo to wolę pisać w czystym kodzie,
+                    ponieważ wydaje mi się to bardziej satysfakcjonujące. Dąże do tego, aby być w tym jak najlepsza. 😉
                 </StyledText>
             </>
         }
