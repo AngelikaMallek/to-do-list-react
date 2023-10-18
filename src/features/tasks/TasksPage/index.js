@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
+import Search from "./Search";
 import { Button, StyledButtons } from "./Button";
 import { fetchExampleTasks, selectIsLoading } from "../taskSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -31,6 +32,10 @@ function TasksPage() {
               </Button>
             </StyledButtons>
           }
+        />
+        <Section
+          title="Wyszukiwarka"
+          body={<Search />}
         />
         <Section
           title="Lista zadań"
