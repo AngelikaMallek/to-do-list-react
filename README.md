@@ -18,6 +18,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React.js
 - Styled Components 
 - Redux
+- React Router
+- Redux Saga
 ## Available Scripts
 
 In the project directory, you can run:
