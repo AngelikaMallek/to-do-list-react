@@ -12,15 +12,26 @@ function TaskPage() {
     return (
         <div>
         <Container>
-            <Header title="szczegóły zadania"/>
-            <Section
-            title={task ? task.content : "Nie znaleziono zadania"}
-            body={
-                <StyledText> 
-                    <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
-                </StyledText>
-            }
-            />
+            <Header title="Szczegóły zadania"/>
+                {
+                    task ? (
+                        <Section
+                        title={task.content}
+                        body={
+                            <> 
+                                <StyledText>
+                                    <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+                                </StyledText>
+                            </> 
+                            
+                        }
+                        />
+                    )
+                    :   <Section 
+                            title={"Nie znaleziono zadania"} 
+                            body={<StyledText> </StyledText>}
+                        />
+                }
         </Container>
         </div>
     );
