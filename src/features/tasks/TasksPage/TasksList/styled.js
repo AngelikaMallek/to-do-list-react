@@ -2,8 +2,9 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const List = styled.ul`
-    list-style-type: none;
     padding: 20px;
+    padding-top: 0;
+    list-style-type: none;
 `;
 
 export const Button = styled.button`

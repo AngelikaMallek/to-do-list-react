@@ -14,7 +14,7 @@ const Search = () => {
             if(target.value.trim() === "") {
                 searchParams.delete("szukaj");
             } else {
-                searchParams.set("szukaj",target.value);
+                searchParams.set("szukaj", target.value);
             }
 
         history.push(`${location.pathname}?${searchParams.toString()}`);

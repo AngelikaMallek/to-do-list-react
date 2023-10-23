@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledText = styled.p`
     padding: 20px;
-    padding-top: 10px;
+    padding-top: 0;
     display: grid;
     grid-template-columns: 1fr;
 

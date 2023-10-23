@@ -28,7 +28,7 @@ function TasksPage() {
                 onClick={() => dispatch(fetchExampleTasks())}
                 disabled={isLoading}
               >
-                {isLoading ? "Ładowanie..." : "Pobierz przykładowe zadania."}
+                {isLoading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
               </Button>
             </StyledButtons>
           }
